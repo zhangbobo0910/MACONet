@@ -1,7 +1,6 @@
 import torch.nn as nn
-from .cnn import MaskCNN_1, MaskCNN_2          # 原始 SDM+BFM 实现
-from .mab_wrapper import MABWrapper            # 刚刚保存的包装器
-
+from .cnn import MaskCNN_1, MaskCNN_2          
+from .mab_wrapper import MABWrapper            
 
 class MaskCNN_1_MAB(MaskCNN_1):
     """将 MAB 串联到 MaskCNN_1 的输出。"""
